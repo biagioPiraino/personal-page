@@ -1,8 +1,9 @@
 /* Variables */
 @concrete-color: #D1D9D9;
-@navbar-font-color: #474E68;
 @navbar-font-size: 1rem;
 @main-font: 'Ubuntu', sans-serif;
+@main-font-color: #474E68;
+@small-font-size: 0.7rem;
 
 /* Global style */
 body {
@@ -27,7 +28,7 @@ body {
 }
 
 .navbar-links a {
-  color: @navbar-font-color;
+  color: @main-font-color;
   text-decoration: none;
   font-size: @navbar-font-size;
   padding: 0.5rem;
@@ -58,4 +59,11 @@ body {
   60%  { transform: translate(5px, 0)  rotate(10deg); }
   80%  { transform: translate(-5px, 0) rotate(-10deg); }
   100% { transform: translate(0)       rotate(0); }
+}
+
+/* Footer style */
+.footer {
+  color: @main-font-color;
+  font-size: @small-font-size;
+  text-align: end;
 }
