@@ -58,12 +58,77 @@ body {
 }
 
 @keyframes shake {
-  0%   { transform: translate(0)       rotate(0); }
-  20%  { transform: translate(5px, 0)  rotate(10deg); }
-  40%  { transform: translate(-5px, 0) rotate(-10deg); }
-  60%  { transform: translate(5px, 0)  rotate(10deg); }
-  80%  { transform: translate(-5px, 0) rotate(-10deg); }
-  100% { transform: translate(0)       rotate(0); }
+  0% {
+    transform: translate(0) rotate(0);
+  }
+
+  20% {
+    transform: translate(5px, 0) rotate(10deg);
+  }
+
+  40% {
+    transform: translate(-5px, 0) rotate(-10deg);
+  }
+
+  60% {
+    transform: translate(5px, 0) rotate(10deg);
+  }
+
+  80% {
+    transform: translate(-5px, 0) rotate(-10deg);
+  }
+
+  100% {
+    transform: translate(0) rotate(0);
+  }
+}
+
+/* Main container */
+.main-container {
+  display: flex;
+  align-items: center;
+}
+
+.intro-message {
+  width: 60%;
+  position: relative;
+  left: 30px;
+}
+
+.intro-message h1 {
+  color: @main-font-color;
+  font-size: 5rem;
+  white-space: nowrap;
+}
+
+.punctuation {
+  color: @contrast-color;
+}
+
+.intro-greetings-text {
+  overflow: hidden;
+  letter-spacing: 1.5px;
+}
+
+.line-2 {
+  position: relative;
+  left: 15%;
+}
+
+#blinking-dot {
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
 }
 
 /* Footer style */
@@ -71,4 +136,5 @@ body {
   color: @main-font-color;
   font-size: @small-font-size;
   text-align: end;
+  margin-right: 10px;
 }
