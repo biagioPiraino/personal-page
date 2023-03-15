@@ -116,7 +116,7 @@ body {
 }
 
 #blinking-dot {
-  animation: blink 0.7s infinite;
+  animation: blink 1s infinite;
 }
 
 @keyframes blink {
@@ -137,4 +137,14 @@ body {
   font-size: @small-font-size;
   text-align: end;
   margin-right: 10px;
+}
+
+.credit {
+  color: @main-font-color;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.credit:hover {
+  color: @contrast-color;
 }
