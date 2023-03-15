@@ -1,0 +1,150 @@
+/* Variables */
+@concrete-color: #D1D9D9;
+@contrast-color: #F06F2B;
+@navbar-font-size: 1rem;
+@main-font: 'Ubuntu', sans-serif;
+@main-font-color: #474E68;
+@small-font-size: 0.7rem;
+
+/* Global style */
+body {
+  margin: 0;
+  background-color: @concrete-color;
+  font-family: @main-font;
+  /* Sticky footer */
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+/* Navbar style */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: @concrete-color;
+  padding: 1rem;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar-links a {
+  color: @main-font-color;
+  text-decoration: none;
+  font-size: @navbar-font-size;
+  padding: 0.5rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-links a:hover {
+  color: @contrast-color;
+  position: relative;
+  bottom: 3px;
+}
+
+.navbar-logo img {
+  width: 20%;
+  rotate: (-10deg);
+  transition: transform 0.7s ease-in-out;
+}
+
+.navbar-logo img:hover {
+  animation: shake 0.7s;
+  animation-iteration-count: 1;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(0) rotate(0);
+  }
+
+  20% {
+    transform: translate(5px, 0) rotate(10deg);
+  }
+
+  40% {
+    transform: translate(-5px, 0) rotate(-10deg);
+  }
+
+  60% {
+    transform: translate(5px, 0) rotate(10deg);
+  }
+
+  80% {
+    transform: translate(-5px, 0) rotate(-10deg);
+  }
+
+  100% {
+    transform: translate(0) rotate(0);
+  }
+}
+
+/* Main container */
+.main-container {
+  display: flex;
+  align-items: center;
+}
+
+.intro-message {
+  width: 60%;
+  position: relative;
+  left: 30px;
+}
+
+.intro-message h1 {
+  color: @main-font-color;
+  font-size: 5rem;
+  white-space: nowrap;
+}
+
+.punctuation {
+  color: @contrast-color;
+}
+
+.intro-greetings-text {
+  overflow: hidden;
+  letter-spacing: 1.5px;
+}
+
+.line-2 {
+  position: relative;
+  left: 15%;
+}
+
+#blinking-dot {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Footer style */
+.footer {
+  color: @main-font-color;
+  font-size: @small-font-size;
+  text-align: end;
+  margin-right: 10px;
+}
+
+.credit {
+  color: @main-font-color;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.credit:hover {
+  color: @contrast-color;
+}
