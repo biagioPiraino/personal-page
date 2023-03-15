@@ -26,7 +26,7 @@ body {
   transition: color 0.3s ease-in-out;
 }
 .navbar-links a:hover {
-  color: #fff;
+  color: #f06f2b;
   position: relative;
   bottom: 3px;
 }
