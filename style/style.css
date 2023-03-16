@@ -85,9 +85,9 @@ body {
   overflow: hidden;
   letter-spacing: 1.5px;
 }
-.line-2 {
+.role-line {
   position: relative;
-  left: 15%;
+  left: 10%;
 }
 #blinking-dot {
   animation: blink 1s infinite;
