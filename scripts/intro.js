@@ -1,3 +1,6 @@
+// Define const used in all scrpt
+const delay = 50
+
 // Implement typing effect on the "hello-line" section
 const hello_text  = "Hello";
 const hello_comma = ","
@@ -31,8 +34,10 @@ function typeName() {
 }
 
 typeHello()
-setTimeout(typeComma, ((hello_speed * hello_text.length) + 50)); 
-setTimeout(typeName,  (hello_speed * (hello_text.length + hello_comma.length) + 50))
+const hello_timeout = (hello_speed * hello_text.length) + delay
+setTimeout(typeComma, hello_timeout);
+const hello_comma_timeout = hello_timeout + (hello_speed * hello_comma.length)
+setTimeout(typeName,  hello_comma_timeout)
 
 // Implement typing effect on the "role-line" section
 const role_text  = "a Full Stack Developer";
@@ -56,7 +61,7 @@ function typeBlinkingDot() {
   }
 }
 
-const role_line_timeout = (hello_speed * (hello_text.length + hello_comma.length + hello_name.length) + 50)
+const role_line_timeout = hello_comma_timeout + (hello_speed * hello_name.length)
 setTimeout(typeRoleDescription, role_line_timeout)
 const role_dot_timeout = role_line_timeout + (role_speed * role_text.length)
 setTimeout(typeBlinkingDot, role_dot_timeout)
