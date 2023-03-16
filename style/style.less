@@ -85,8 +85,9 @@ body {
 
 /* Main container */
 .main-container {
-  display: flex;
   align-items: center;
+  cursor: default;
+  display: flex;
 }
 
 .intro-message {
@@ -110,13 +111,18 @@ body {
   letter-spacing: 1.5px;
 }
 
-.line-2 {
+.role-line {
   position: relative;
-  left: 15%;
+  left: 10%;
 }
 
 #blinking-dot {
   animation: blink 1s infinite;
+}
+
+#blinking-dot:hover {
+  position: relative;
+  animation: bounce 0.7s infinite ease-in-out;
 }
 
 @keyframes blink {
@@ -128,6 +134,18 @@ body {
 
   50% {
     opacity: 0;
+  }
+}
+
+@keyframes bounce {
+
+  0%,
+  100% {
+    bottom: 10px;
+  }
+
+  50% {
+    bottom: 0;
   }
 }
 
