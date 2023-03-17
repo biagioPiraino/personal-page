@@ -1,5 +1,4 @@
-/* Variables */
-/* Global style */
+/* Global */
 body {
   margin: 0;
   font-family: 'Ubuntu', sans-serif;
@@ -8,16 +7,16 @@ body {
   display: grid;
   grid-template-rows: auto 1fr auto;
 }
-/* Navbar style */
+/* Navbar */
 .navbar {
-  text-align: center;
   background-color: #d1d9d9;
   padding: 1rem;
+  text-align: center;
 }
 .navbar-logo img {
-  width: 3%;
   rotate: -10deg;
   transition: transform 0.7s ease-in-out;
+  width: 3%;
 }
 .navbar-logo img:hover {
   animation: shake 0.7s;
@@ -51,12 +50,12 @@ body {
 }
 .intro-message h1,
 h2 {
-  margin: 0 auto;
   color: #474e68;
-  white-space: nowrap;
-  text-align: center;
+  margin: 0 auto;
   padding-top: 30px;
+  text-align: center;
   top: 30px;
+  white-space: nowrap;
 }
 .intro-message h1 {
   font-size: 4rem;
@@ -71,8 +70,8 @@ h2 {
   animation: blink 1s infinite;
 }
 #blinking-dot:hover {
-  position: relative;
   animation: bounce 0.8s infinite ease-in-out;
+  position: relative;
 }
 @keyframes blink {
   0%,
@@ -92,30 +91,30 @@ h2 {
     bottom: 0;
   }
 }
-/* Footer style */
+/* Footer */
 .footer {
-  color: #474e68;
-  background-color: #d1d9d9;
-  font-size: 0.7rem;
-  text-align: end;
-  padding: 5px 15px;
-  display: flex;
   align-items: center;
+  background-color: #d1d9d9;
+  color: #474e68;
+  display: flex;
+  font-size: 0.7rem;
   justify-content: space-between;
+  padding: 5px 15px;
+  text-align: end;
 }
 .footer img {
-  width: 17px;
-  opacity: 50%;
   cursor: pointer;
+  opacity: 50%;
+  width: 17px;
 }
 .contact-me-icons {
   display: flex;
   gap: 11px;
 }
 .contact-me-icons img:hover {
-  transform: translate(3px, 0) rotate(5deg);
   opacity: 60%;
   scale: 1.1;
+  transform: translate(3px, 0) rotate(5deg);
 }
 #email-icon {
   position: relative;
