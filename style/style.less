@@ -5,7 +5,7 @@
 @main-font: 'Ubuntu', sans-serif;
 @main-font-color: #474E68;
 @intro-h1-font-size: 4rem;
-@intro-h2-font-size: 3rem;
+@intro-h2-font-size: 2.5rem;
 @small-font-size: 0.7rem;
 
 /* Global style */
@@ -21,35 +21,13 @@ body {
 
 /* Navbar style */
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  text-align: center;
   background-color: @concrete-color;
   padding: 1rem;
 }
 
-.navbar-links {
-  list-style: none;
-  display: flex;
-  gap: 1rem;
-}
-
-.navbar-links a {
-  color: @main-font-color;
-  text-decoration: none;
-  font-size: @navbar-font-size;
-  padding: 0.5rem;
-  transition: color 0.3s ease-in-out;
-}
-
-.navbar-links a:hover {
-  color: @contrast-color;
-  position: relative;
-  bottom: 3px;
-}
-
 .navbar-logo img {
-  width: 20%;
+  width: 3%;
   rotate: (-10deg);
   transition: transform 0.7s ease-in-out;
 }
@@ -84,9 +62,6 @@ body {
     transform: translate(0) rotate(0);
   }
 }
-
-/* Main container */
-
 
 /* Intro message */
 .intro-message-container {
