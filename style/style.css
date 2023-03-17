@@ -67,11 +67,12 @@ h2 {
   color: #f06f2b;
 }
 #blinking-dot {
+  position: relative;
+  right: 7px;
   animation: blink 1s infinite;
 }
 #blinking-dot:hover {
   animation: bounce 0.8s infinite ease-in-out;
-  position: relative;
 }
 @keyframes blink {
   0%,
