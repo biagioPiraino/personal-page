@@ -4,12 +4,14 @@
 @navbar-font-size: 1rem;
 @main-font: 'Ubuntu', sans-serif;
 @main-font-color: #474E68;
+@intro-h1-font-size: 4rem;
+@intro-h2-font-size: 3rem;
 @small-font-size: 0.7rem;
 
 /* Global style */
 body {
   margin: 0;
-  background-color: @concrete-color;
+  
   font-family: @main-font;
   /* Sticky footer */
   min-height: 100vh;
@@ -85,21 +87,26 @@ body {
 
 /* Main container */
 .main-container {
-  align-items: center;
   cursor: default;
-  display: flex;
+  margin: 0 auto;
 }
 
-.intro-message {
-  width: 60%;
-  position: relative;
-  left: 30px;
-}
-
+/* Intro message */
 .intro-message h1 {
   color: @main-font-color;
-  font-size: 5rem;
+  font-size: @intro-h1-font-size;
   white-space: nowrap;
+}
+
+.intro-message h2 {
+  color: @main-font-color;
+  font-size: @intro-h2-font-size;
+  white-space: nowrap;
+}
+
+.hello-line {
+  width: 100%;
+  text-align: center;
 }
 
 .punctuation {
@@ -111,18 +118,13 @@ body {
   letter-spacing: 1.5px;
 }
 
-.role-line {
-  position: relative;
-  left: 10%;
-}
-
 #blinking-dot {
   animation: blink 1s infinite;
 }
 
 #blinking-dot:hover {
   position: relative;
-  animation: bounce 0.7s infinite ease-in-out;
+  animation: bounce 0.8s infinite ease-in-out;
 }
 
 @keyframes blink {
@@ -141,7 +143,7 @@ body {
 
   0%,
   100% {
-    bottom: 10px;
+    bottom: 5px;
   }
 
   50% {
@@ -152,11 +154,12 @@ body {
 /* Footer style */
 .footer {
   color: @main-font-color;
+  background-color: @concrete-color;
   font-size: @small-font-size;
   text-align: end;
-  margin: auto 15px;
+  padding: 5px 15px;
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -169,7 +172,6 @@ body {
 .contact-me-icons {
   display: flex;
   gap: 11px;
-  align-items: center;
 }
 
 .contact-me-icons img:hover {

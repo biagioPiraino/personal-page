@@ -2,7 +2,6 @@
 /* Global style */
 body {
   margin: 0;
-  background-color: #d1d9d9;
   font-family: 'Ubuntu', sans-serif;
   /* Sticky footer */
   min-height: 100vh;
@@ -65,19 +64,23 @@ body {
 }
 /* Main container */
 .main-container {
-  align-items: center;
   cursor: default;
-  display: flex;
+  margin: 0 auto;
 }
-.intro-message {
-  width: 60%;
-  position: relative;
-  left: 30px;
-}
+/* Intro message */
 .intro-message h1 {
   color: #474e68;
-  font-size: 5rem;
+  font-size: 4rem;
   white-space: nowrap;
+}
+.intro-message h2 {
+  color: #474e68;
+  font-size: 3rem;
+  white-space: nowrap;
+}
+.hello-line {
+  width: 100%;
+  text-align: center;
 }
 .punctuation {
   color: #f06f2b;
@@ -86,16 +89,12 @@ body {
   overflow: hidden;
   letter-spacing: 1.5px;
 }
-.role-line {
-  position: relative;
-  left: 10%;
-}
 #blinking-dot {
   animation: blink 1s infinite;
 }
 #blinking-dot:hover {
   position: relative;
-  animation: bounce 0.7s infinite ease-in-out;
+  animation: bounce 0.8s infinite ease-in-out;
 }
 @keyframes blink {
   0%,
@@ -109,7 +108,7 @@ body {
 @keyframes bounce {
   0%,
   100% {
-    bottom: 10px;
+    bottom: 5px;
   }
   50% {
     bottom: 0;
@@ -118,11 +117,12 @@ body {
 /* Footer style */
 .footer {
   color: #474e68;
+  background-color: #d1d9d9;
   font-size: 0.7rem;
   text-align: end;
-  margin: auto 15px;
+  padding: 5px 15px;
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
 }
 .footer img {
@@ -133,7 +133,6 @@ body {
 .contact-me-icons {
   display: flex;
   gap: 11px;
-  align-items: center;
 }
 .contact-me-icons img:hover {
   transform: translate(3px, 0) rotate(5deg);
