@@ -46,13 +46,13 @@ body {
 .intro-message-container {
   background-color: #d1d9d9;
   cursor: default;
-  height: 50vh;
+  height: 30vh;
 }
 .intro-message h1,
 h2 {
   color: #474e68;
   margin: 0 auto;
-  padding-top: 30px;
+  padding-top: 40px;
   text-align: center;
   top: 30px;
   white-space: nowrap;
