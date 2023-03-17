@@ -63,31 +63,29 @@ body {
   }
 }
 /* Main container */
-.main-container {
-  cursor: default;
-  margin: 0 auto;
-}
 /* Intro message */
-.intro-message h1 {
+.intro-message-container {
+  background-color: #d1d9d9;
+  cursor: default;
+  height: 50vh;
+}
+.intro-message h1,
+h2 {
+  margin: 0 auto;
   color: #474e68;
-  font-size: 4rem;
   white-space: nowrap;
+  text-align: center;
+  padding-top: 30px;
+  top: 30px;
+}
+.intro-message h1 {
+  font-size: 4rem;
 }
 .intro-message h2 {
-  color: #474e68;
   font-size: 3rem;
-  white-space: nowrap;
-}
-.hello-line {
-  width: 100%;
-  text-align: center;
 }
 .punctuation {
   color: #f06f2b;
-}
-.intro-greetings-text {
-  overflow: hidden;
-  letter-spacing: 1.5px;
 }
 #blinking-dot {
   animation: blink 1s infinite;

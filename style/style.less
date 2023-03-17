@@ -86,36 +86,33 @@ body {
 }
 
 /* Main container */
-.main-container {
-  cursor: default;
-  margin: 0 auto;
-}
+
 
 /* Intro message */
-.intro-message h1 {
+.intro-message-container {
+  background-color: @concrete-color;
+  cursor: default;
+  height: 50vh;
+}
+
+.intro-message h1,h2 {
+  margin: 0 auto;
   color: @main-font-color;
-  font-size: @intro-h1-font-size;
   white-space: nowrap;
+  text-align: center;
+  padding-top: 30px;
+  top: 30px;
+}
+.intro-message h1 {
+  font-size: @intro-h1-font-size;
 }
 
 .intro-message h2 {
-  color: @main-font-color;
   font-size: @intro-h2-font-size;
-  white-space: nowrap;
-}
-
-.hello-line {
-  width: 100%;
-  text-align: center;
 }
 
 .punctuation {
   color: @contrast-color;
-}
-
-.intro-greetings-text {
-  overflow: hidden;
-  letter-spacing: 1.5px;
 }
 
 #blinking-dot {
