@@ -1,28 +1,9 @@
-// Define const used in all scrpt
+// Define const used in all the scrpt
 const delay = 50
 
 // Implement typing effect on the "hello-line" section
-const hello_text  = "Hello";
-const hello_comma = ","
 const hello_name  = "I'm Biagio"
 const hello_speed = 55;
-
-let text_counter = 0;
-function typeHello() {
-  if (text_counter < hello_text.length) {
-    document.getElementById("hello-text").innerHTML += hello_text.charAt(text_counter);
-    text_counter++;
-    setTimeout(typeHello, hello_speed);
-  }
-}
-
-let comma_counter = 0;
-function typeComma() {
-  if (comma_counter < hello_comma.length) {
-    document.getElementById("hello-comma").innerHTML += hello_comma.charAt(comma_counter);
-    comma_counter++;
-  }
-}
 
 let name_counter = 0;
 function typeName() {
@@ -32,12 +13,7 @@ function typeName() {
     setTimeout(typeName, hello_speed);
   }
 }
-
-typeHello()
-const hello_timeout = (hello_speed * hello_text.length) + delay
-setTimeout(typeComma, hello_timeout);
-const hello_comma_timeout = hello_timeout + (hello_speed * hello_comma.length)
-setTimeout(typeName,  hello_comma_timeout)
+typeName()
 
 // Implement typing effect on the "role-line" section
 const role_text  = "a Full Stack Developer";
@@ -61,7 +37,18 @@ function typeBlinkingDot() {
   }
 }
 
-const role_line_timeout = hello_comma_timeout + (hello_speed * hello_name.length)
+const role_line_timeout = (hello_speed * hello_name.length)
 setTimeout(typeRoleDescription, role_line_timeout)
 const role_dot_timeout = role_line_timeout + (role_speed * role_text.length)
 setTimeout(typeBlinkingDot, role_dot_timeout)
+
+// Scrolling up effect if icon clicked
+const top_page_icon = document.getElementById('top-page-icon')
+
+top_page_icon.addEventListener('click', function(event) {
+  event.preventDefault();
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
