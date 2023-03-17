@@ -5,10 +5,12 @@ body {
   /* Sticky footer */
   min-height: 100vh;
   display: grid;
-  grid-template-rows: auto 1fr auto;
+  grid-template-rows: 1fr auto;
 }
 /* Navbar */
 .navbar {
+  position: fixed;
+  width: 100%;
   background-color: #d1d9d9;
   padding: 1rem;
   text-align: center;
@@ -17,6 +19,8 @@ body {
   rotate: -10deg;
   transition: transform 0.7s ease-in-out;
   width: 3%;
+  min-width: 10px;
+  max-width: 30px;
 }
 .navbar-logo img:hover {
   animation: shake 0.7s;
@@ -44,17 +48,17 @@ body {
 }
 /* Intro message */
 .intro-message-container {
+  padding-top: 50px;
   background-color: #d1d9d9;
   cursor: default;
-  height: 30vh;
+  height: 27vh;
 }
 .intro-message h1,
 h2 {
   color: #474e68;
   margin: 0 auto;
-  padding-top: 40px;
+  padding-top: 30px;
   text-align: center;
-  top: 30px;
   white-space: nowrap;
 }
 .intro-message h1 {

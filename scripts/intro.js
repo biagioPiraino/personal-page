@@ -41,3 +41,14 @@ const role_line_timeout = (hello_speed * hello_name.length)
 setTimeout(typeRoleDescription, role_line_timeout)
 const role_dot_timeout = role_line_timeout + (role_speed * role_text.length)
 setTimeout(typeBlinkingDot, role_dot_timeout)
+
+// Scrolling up effect if icon clicked
+const top_page_icon = document.getElementById('top-page-icon')
+
+top_page_icon.addEventListener('click', function(event) {
+  event.preventDefault();
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
