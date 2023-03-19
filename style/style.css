@@ -73,7 +73,8 @@ button:active {
   padding-top: 50px;
   background-color: #d1d9d9;
   cursor: default;
-  height: 35vh;
+  height: 20vh;
+  min-height: 250px;
 }
 .intro-message h1,
 h2 {
