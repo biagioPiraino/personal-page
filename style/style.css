@@ -12,6 +12,23 @@ hr {
   border-bottom: none;
   width: 2%;
 }
+button {
+  background-color: #f06f2b;
+  border: none;
+  border-radius: 10px;
+  color: #d1d9d9;
+  cursor: pointer;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.1rem;
+  padding: 15px 30px;
+  transition: background-color 0.2s ease-in-out;
+}
+button:hover {
+  background-color: #D85A1F;
+}
+button:active {
+  transform: translateY(2px);
+}
 /* Navbar */
 .navbar {
   position: fixed;
@@ -101,31 +118,34 @@ h2 {
     bottom: 0;
   }
 }
-/* Activity */
-.activity-section {
+/* Blocks */
+.block-section {
   margin: 0 auto;
   max-width: 850px;
   padding-top: 30px;
   width: 75%;
 }
-.activity-section h1 {
+.block-section h1 {
   color: #474e68;
   font-size: 2.5rem;
   margin-bottom: 40px;
   text-align: center;
 }
+.block-section p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+.block-section h3 {
+  color: #f06f2b;
+}
+/* Activity */
 .activity-container {
   align-items: center;
   display: flex;
   margin: 50px auto;
 }
 .activity-section h3 {
-  color: #f06f2b;
   margin-bottom: -0.5em;
-}
-.activity-section p {
-  font-size: 0.95rem;
-  line-height: 1.5;
 }
 .activity-section img {
   margin-right: 30px;
@@ -136,6 +156,14 @@ h2 {
 .activity-description {
   text-align: start;
   overflow: hidden;
+}
+/* Contact me */
+.contact-me-section {
+  text-align: center;
+}
+.contact-me-section button {
+  margin: 30px 0 90px 0;
+  font-weight: bold;
 }
 /* Footer */
 .footer {
@@ -153,18 +181,14 @@ h2 {
   opacity: 50%;
   width: 17px;
 }
-.contact-me-icons {
+.external-links-icons {
   display: flex;
   gap: 11px;
 }
-.contact-me-icons img:hover {
+.external-links-icons img:hover {
   opacity: 60%;
   scale: 1.1;
   transform: translate(3px, 0) rotate(5deg);
-}
-#email-icon {
-  position: relative;
-  top: 2px;
 }
 .credit {
   color: #474e68;
