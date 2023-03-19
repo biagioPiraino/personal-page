@@ -24,6 +24,26 @@ hr {
   width: 2%;
 }
 
+button {
+  background-color: @contrast-color;
+  border: none;
+  border-radius: 10px;
+  color: @concrete-color;
+  cursor: pointer;
+  font-family: @main-font;
+  font-size: 1.1rem;
+  padding: 15px 30px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #D85A1F;
+}
+
+button:active {
+  transform: translateY(2px);
+}
+
 /* Navbar */
 .navbar {
   position: fixed;
@@ -135,21 +155,31 @@ h2 {
   }
 }
 
-/* Activity */
-.activity-section {
+/* Blocks */
+.block-section {
   margin: 0 auto;
   max-width: 850px;
   padding-top: 30px;
   width: 75%;
 }
 
-.activity-section h1 {
+.block-section h1 {
   color: @main-font-color;
   font-size: @mid-title-size;
   margin-bottom: 40px;
   text-align: center;
 }
 
+.block-section p {
+  font-size: @paragraph-font-size;
+  line-height: 1.5;
+}
+
+.block-section h3 {
+  color: @contrast-color;
+}
+
+/* Activity */
 .activity-container {
   align-items: center;
   display: flex;
@@ -157,13 +187,7 @@ h2 {
 }
 
 .activity-section h3 {
-  color: @contrast-color;
   margin-bottom: -0.5em;
-}
-
-.activity-section p {
-  font-size: @paragraph-font-size;
-  line-height: 1.5;
 }
 
 .activity-section img {
@@ -176,6 +200,16 @@ h2 {
 .activity-description {
   text-align: start;
   overflow: hidden;
+}
+
+/* Contact me */
+.contact-me-section {
+  text-align: center;
+}
+
+.contact-me-section button {
+  margin: 30px 0 90px 0;
+  font-weight: bold;
 }
 
 /* Footer */
