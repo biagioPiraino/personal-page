@@ -7,6 +7,11 @@ body {
   display: grid;
   grid-template-rows: 1fr auto;
 }
+hr {
+  border: 6px dotted #d1d9d9;
+  border-bottom: none;
+  width: 2%;
+}
 /* Navbar */
 .navbar {
   position: fixed;
@@ -51,7 +56,7 @@ body {
   padding-top: 50px;
   background-color: #d1d9d9;
   cursor: default;
-  height: 27vh;
+  height: 35vh;
 }
 .intro-message h1,
 h2 {
@@ -95,6 +100,42 @@ h2 {
   50% {
     bottom: 0;
   }
+}
+/* Activity */
+.activity-section {
+  margin: 0 auto;
+  max-width: 850px;
+  padding-top: 30px;
+  width: 75%;
+}
+.activity-section h1 {
+  color: #474e68;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.activity-container {
+  align-items: center;
+  display: flex;
+  margin: 50px auto;
+}
+.activity-section h3 {
+  color: #f06f2b;
+  margin-bottom: -0.5em;
+}
+.activity-section p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+.activity-section img {
+  margin-right: 30px;
+  max-height: 100px;
+  max-width: 100px;
+  width: 25%;
+}
+.activity-description {
+  text-align: start;
+  overflow: hidden;
 }
 /* Footer */
 .footer {

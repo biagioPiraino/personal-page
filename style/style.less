@@ -3,9 +3,10 @@
 @navbar-font-size: 1rem;
 @main-font: 'Ubuntu', sans-serif;
 @main-font-color: #474E68;
-@intro-h1-font-size: 4rem;
-@intro-h2-font-size: 2.5rem;
+@big-title-size: 4rem;
+@mid-title-size: 2.5rem;
 @small-font-size: 0.7rem;
+@paragraph-font-size: 0.95rem;
 
 /* Global */
 body {
@@ -15,6 +16,12 @@ body {
   min-height: 100vh;
   display: grid;
   grid-template-rows: 1fr auto;
+}
+
+hr {
+  border: 6px dotted @concrete-color;
+  border-bottom: none;
+  width: 2%;
 }
 
 /* Navbar */
@@ -70,7 +77,7 @@ body {
   padding-top: 50px;
   background-color: @concrete-color;
   cursor: default;
-  height: 27vh;
+  height: 35vh;
 }
 
 .intro-message h1,
@@ -83,11 +90,11 @@ h2 {
 }
 
 .intro-message h1 {
-  font-size: @intro-h1-font-size;
+  font-size: @big-title-size;
 }
 
 .intro-message h2 {
-  font-size: @intro-h2-font-size;
+  font-size: @mid-title-size;
 }
 
 .punctuation {
@@ -126,6 +133,49 @@ h2 {
   50% {
     bottom: 0;
   }
+}
+
+/* Activity */
+.activity-section {
+  margin: 0 auto;
+  max-width: 850px;
+  padding-top: 30px;
+  width: 75%;
+}
+
+.activity-section h1 {
+  color: @main-font-color;
+  font-size: @mid-title-size;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.activity-container {
+  align-items: center;
+  display: flex;
+  margin: 50px auto;
+}
+
+.activity-section h3 {
+  color: @contrast-color;
+  margin-bottom: -0.5em;
+}
+
+.activity-section p {
+  font-size: @paragraph-font-size;
+  line-height: 1.5;
+}
+
+.activity-section img {
+  margin-right: 30px;
+  max-height: 100px;
+  max-width: 100px;
+  width: 25%;
+}
+
+.activity-description {
+  text-align: start;
+  overflow: hidden;
 }
 
 /* Footer */
