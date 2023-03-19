@@ -167,26 +167,22 @@ h2 {
 }
 /* Footer */
 .footer {
-  align-items: center;
   background-color: #d1d9d9;
   color: #474e68;
-  display: flex;
   font-size: 0.7rem;
-  justify-content: space-between;
-  padding: 5px 15px;
-  text-align: end;
+  text-align: center;
 }
 .footer img {
   cursor: pointer;
+  margin: 15px 7px 10px 7px;
   opacity: 50%;
   width: 17px;
 }
-.external-links-icons {
-  display: flex;
-  gap: 11px;
+.footer p {
+  margin: 0 0 15px 0;
 }
 .external-links-icons img:hover {
-  opacity: 60%;
+  opacity: 70%;
   scale: 1.1;
   transform: translate(3px, 0) rotate(5deg);
 }
