@@ -16,10 +16,11 @@ button {
   background-color: #f06f2b;
   border: none;
   border-radius: 10px;
-  color: #d1d9d9;
+  color: #fff;
   cursor: pointer;
   font-family: 'Ubuntu', sans-serif;
   font-size: 1.1rem;
+  font-weight: bold;
   padding: 15px 30px;
   transition: background-color 0.2s ease-in-out;
 }
@@ -164,7 +165,28 @@ h2 {
 }
 .contact-me-section button {
   margin: 30px 0 90px 0;
-  font-weight: bold;
+}
+/* Credits */
+.credits {
+  display: grid;
+  padding-top: 100px;
+}
+.credit-container {
+  align-items: center;
+  display: flex;
+  margin: 15px auto;
+}
+.credit-container img {
+  margin-right: 30px;
+  max-height: 30px;
+  max-width: 30px;
+  width: 10%;
+}
+.go-back-section {
+  text-align: center;
+}
+.go-back-section button {
+  margin-bottom: 55px;
 }
 /* Footer */
 .footer {
