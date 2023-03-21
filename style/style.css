@@ -156,7 +156,7 @@ h2 {
   width: 25%;
 }
 .activity-description {
-  text-align: start;
+  text-align: justify;
   overflow: hidden;
 }
 /* Contact me */
