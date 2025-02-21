@@ -4,40 +4,21 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Hello, Biagio's here.</title>
-  <meta name="description" content="Biagio Piraino's personal website, 
-      which includes details about his professional background, 
-      accomplishments, and current projects.">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ciao!</title>
+  <meta name="description" content="Biagio Piraino personal website.">  
   <meta name="author" content="Biagio Piraino">
   <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="./style/style.css" type="text/css">
+  <link rel="stylesheet" href="./style/main.css" type="text/css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <nav class="navbar">
-    <div class="navbar-logo">
-      <a href="#" id="top-page-icon">
-        <img src="./images/spaghetti-icon.png" alt="home-icon">
-      </a>
-    </div>
-  </nav>
+  <header-component class="header-container"></header-component>
 
   <main class="main-container">
-
-    <div class="intro-message-container">
-      <div class="intro-message">
-        <h1 class="hello-line" id="hello-name"></h1>
-        <h2 class="role-line">
-          <span id="role-description"></span>
-          <span class="punctuation" id="blinking-dot"></span>
-        </h2>
-      </div>
-    </div>
-
     <div class="block-section activity-section ">
       <h1>What do I do?</h1>
       <div class="activity-container" id="web-development-container">
@@ -78,28 +59,12 @@
     </div>
 
     <hr>
-
-    <div class="block-section contact-me-section">
-      <h1>Get in Touch</h1>
-      <p>
-        Thanks for your interest in getting in touch with me! 
-        If you have any questions, want to propose collaborations, or would like to say hello, please don't hesitate to contact me.
-        I will do my best to get back to you as soon as possible!
-      </p>
-      <button onclick="location.href='mailto:biagio.piraino.uk@gmail.com'">CONTACT ME</button>
-    </div>
   </main>
 
-  <footer class="footer">
-    <div class="external-links-icons">
-      <a href="https://github.com/biagioPiraino/" target="_blank" referrerpolicy="no-referrer">
-        <img alt="github icon" src="https://cdn-icons-png.flaticon.com/512/2111/2111425.png"></a>
-      <a href="https://www.linkedin.com/in/biagio-piraino/" target="_blank" referrerpolicy="no-referrer">
-        <img alt="linkedin icon" src="https://cdn-icons-png.flaticon.com/512/220/220343.png"></a>
-    </div>
-    <p>&copy; Biagio Piraino 2024, <a class="credit" href="./structure/credits.html">Credits.</a></p>
-  </footer>
-  <script src="./scripts/intro.js"></script>
+  <footer-component></footer-component>
+
+  <script src="./components/header.js"></script>
+  <script src="./components/footer.js"></script>
 </body>
 
 </html>

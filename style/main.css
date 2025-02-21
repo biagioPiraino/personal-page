@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    /* Sticky footer */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+}
+
+.header-container {
+    background-color: #474E68;
+    color: whitesmoke;
+    padding-left: 16px;
+}
+
+.main-container {
+    flex-grow: 1;
+}
+
+hr {
+    border: 6px dotted #D1D9D9;
+    border-bottom: none;
+    width: 2%;
+}
+
+button {
+    background-color: #F06F2B;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 15px 30px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: #D85A1F;
+}
+
+button:active {
+    transform: translateY(2px);
+}
+
+/* Blocks */
+.block-section {
+    margin: 0 auto;
+    max-width: 850px;
+    padding-top: 30px;
+    width: 75%;
+}
+
+.block-section h1 {
+    color: #474E68;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.block-section p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.block-section h3 {
+    color: #F06F2B;
+}
+
+/* Activity */
+.activity-container {
+    align-items: center;
+    display: flex;
+    margin: 50px auto;
+}
+
+.activity-section h3 {
+    margin-bottom: -0.5em;
+}
+
+.activity-section img {
+    margin-right: 30px;
+    width: 55px;
+}
+
+.activity-description {
+    text-align: justify;
+    overflow: hidden;
+}
