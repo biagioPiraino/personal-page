@@ -1,0 +1,63 @@
+{
+  "data":[
+    {
+      "company_name": "FitnessGenes, Ldt",
+      "period": "March 2023 - Current",
+      "location": "London, UK",
+      "position": "Full Stack Developer",
+      "key_points": [
+        {
+          "point": "Developed a Vue.js web‐based solution for B2B partners, utilizing Azure services for scalable, reliable, and secure deployment, and enhanced features."
+        },
+        {
+          "point": "Developed a secure REST API solution to facilitate seamless data exchange and streamline communication processes for B2B partners."
+        },
+        {
+          "point": "Assisted in maintaining the legacy MVC + Entity Framework stack, ensuring ongoing functionality and alignment with evolving business requirements."
+        }
+      ]
+    },
+    {
+      "company_name": "IPipeline, Inc.",
+      "period": "July 2021 - March 2023",
+      "location": "London, UK",
+      "position": "Software Developer",
+      "key_points": [
+        {
+          "point": "Designed and implemented more than 5 end‐to‐end software solutions according to client’s requirements."
+        },
+        {
+          "point": "Increased code maintainability and clarity by refactoring 10% of legacy code in my area of expertise using SOLID principles and design patterns."
+        },
+        {
+          "point": "Enhanced code quality by establishing the groundwork for the implementation of Unit Testing within the code base."
+        }
+      ]
+    },
+    {
+      "company_name": "Prometeia Spa",
+      "period": "May 2018 - August 2020",
+      "location": "Milan, Italy",
+      "position": "Management Consultant",
+      "key_points": [
+        {
+          "point": "Developed 10 three‐year Strategy Plans, focusing on both numerical estimation and the delivery of valuable key messages."
+        },
+        {
+          "point": "Engaged in 5 M&A transactions involving mid‐sized financial institutions, with a primary focus on synergy estimation and financial forecasting."
+        }
+      ]
+    },
+    {
+      "company_name": "Brembo Spa",
+      "period": "September 2011 - August 2012",
+      "location": "Bergamo, Italy",
+      "position": "Factory Worker",
+      "key_points": [
+        {
+          "point": "Overseen a complete assembly line to fulfil day‐to‐day shipment deadlines."
+        }
+      ]
+    }
+  ]
+}
