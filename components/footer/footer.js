@@ -4,7 +4,7 @@ class FooterComponent extends HTMLElement {
 
         fetch("components/footer/footer.html")
             .then(response => {
-                return response.text(0)
+                return response.text()
             })
             .then(html => {
                 const parser = new DOMParser()

@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ciao!</title>
-  <meta name="description" content="Biagio Piraino personal website.">  
+  <meta name="description" content="Biagio Piraino personal website.">
   <meta name="author" content="Biagio Piraino">
   <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="./style/main.css" type="text/css">
@@ -16,12 +16,14 @@
 </head>
 
 <body>
-  <header-component class="header-container"></header-component>
 
-  <main class="main-container">
+  <header-component></header-component>
 
-    
-    <div class="block-section activity-section ">
+
+  <main>
+    <curriculum-component></curriculum-component>
+
+    <!-- <div class="block-section activity-section ">
       <h1>What do I do?</h1>
       <div class="activity-container" id="web-development-container">
         <img alt="web developer icon" src="https://cdn-icons-png.flaticon.com/128/9436/9436966.png">
@@ -41,7 +43,8 @@
         <div class="activity-description">
           <h3>Cloud Development</h3>
           <p>
-            Despite being an AWS-certified Solution Architect, I spend most of my time developing solutions in the Azure cloud.
+            Despite being an AWS-certified Solution Architect, I spend most of my time developing solutions in the Azure
+            cloud.
             I'm well-rounded in cloud development, design, and deployments with both providers, automating my activities
             as much as possible using bash scripting and Terraform.
           </p>
@@ -52,13 +55,15 @@
         <div class="activity-description">
           <h3>Carbs King</h3>
           <p>
-            I have a great love for cooking, particularly when making fresh pasta and pizza. 
-            I enjoy experimenting with different techniques and methods for creating unique and flavorful pasta dishes, from coloured pasta to stuffed varieties. 
-            There's something satisfying about crafting a delicious meal from scratch, and I take great pride in what I create.
+            I have a great love for cooking, particularly when making fresh pasta and pizza.
+            I enjoy experimenting with different techniques and methods for creating unique and flavorful pasta dishes,
+            from coloured pasta to stuffed varieties.
+            There's something satisfying about crafting a delicious meal from scratch, and I take great pride in what I
+            create.
           </p>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <hr>
   </main>
@@ -66,6 +71,7 @@
   <footer-component></footer-component>
 
   <script src="./components/header/header.js"></script>
+  <script src="./components/curriculum/curriculum.js"></script>
   <script src="./components/footer/footer.js"></script>
 </body>
 
