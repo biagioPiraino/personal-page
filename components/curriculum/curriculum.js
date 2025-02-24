@@ -31,12 +31,12 @@ class CurriculumComponent extends HTMLElement {
                             entryTemplate.innerHTML = `
                                 <div class="entry-header" slot="header">
                                     <span>${exp.company_name}</span>
-                                    <span>${exp.period}</span>
+                                    <span class="header-period">${exp.period}</span>
                                 </div>
 
                                 <div class="position-container" slot="position">
                                     <span>${exp.position}</span>
-                                    <span>${exp.location}</span>
+                                    <span class="position-location">${exp.location}</span>
                                 </div>
                             `
                             let summary = `<ul>`

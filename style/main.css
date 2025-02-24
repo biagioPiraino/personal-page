@@ -1,3 +1,8 @@
+:root {
+    --primary-color: #474E68;
+
+}
+
 body {
     margin: 0;
     font-family: 'Ubuntu', sans-serif;
@@ -21,7 +26,7 @@ h1,h2,h3,h4,h5,h6,ul,ol,li,p {
 }
 
 hr {
-    border: 6px dotted #D1D9D9;
+    border: 4px dotted #D1D9D9;
     border-bottom: none;
-    width: 2%;
+    max-width: 25px;
 }
