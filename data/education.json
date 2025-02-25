@@ -1,0 +1,43 @@
+{
+    "data": [
+        {
+            "school": "University of Birmingham",
+            "location": "Birmingham, UK",
+            "degree": "MSc in Computer Science",
+            "grade": "Distinction",
+            "period": "September 2020 - September 2021",
+            "key_points": [
+                {
+                    "point": "Specialised in Full Stack Development and Software Architecture."
+                },
+                {
+                    "point": "Developed an Android chat application integrating real‐time sentiment analysis elements."
+                }
+            ]
+        },
+        {
+            "school": "University of Bologna",
+            "location": "Bologna, Italy",
+            "degree": "MSc in Economics",
+            "grade": "Distinction and Laude",
+            "period": "September 2016 - September 2018",
+            "key_points": [
+                {
+                    "point": "Specialised in Financial Analysis and Time Series Analysis."
+                }
+            ]
+        },
+        {
+            "school": "University of Milan",
+            "location": "Milan, Italy",
+            "degree": "BA in Political Science",
+            "grade": "Honours",
+            "period": "September 2012 - September 2015",
+            "key_points": [
+                {
+                    "point": "Specialised in Economics and Finance."
+                }
+            ]
+        }
+    ]
+}
