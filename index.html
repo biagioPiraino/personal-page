@@ -18,61 +18,17 @@
 <body>
 
   <header-component></header-component>
-  <main>
+  <main id="main-container">
     <summary-component></summary-component>
     <hr>
     <skills-component></skills-component>
     <hr>
-    <curriculum-component></curriculum-component>
-
-    <!-- <div class="block-section activity-section ">
-      <h1>What do I do?</h1>
-      <div class="activity-container" id="web-development-container">
-        <img alt="web developer icon" src="https://cdn-icons-png.flaticon.com/128/9436/9436966.png">
-        <div class="activity-description">
-          <h3>Web Development</h3>
-          <p>
-            I've been developing web-based solutions for almost three years, mainly using .NET core, Blazor and MongoDB
-            to build APIs and full-stack solutions professionally.
-            For my pet projects, I like to use .NET core, Golang and MongoDB to develop backend solutions,
-            while using the Vue-Pinia-Vuetify combo to create engaging UI/UX.
-            To automate deployments and activities, I mainly use bash scripting and Python.
-          </p>
-        </div>
-      </div>
-      <div class="activity-container" id="cloud-deployment-container">
-        <img alt="cloud developer icon" src="https://cdn-icons-png.flaticon.com/512/1548/1548768.png">
-        <div class="activity-description">
-          <h3>Cloud Development</h3>
-          <p>
-            Despite being an AWS-certified Solution Architect, I spend most of my time developing solutions in the Azure
-            cloud.
-            I'm well-rounded in cloud development, design, and deployments with both providers, automating my activities
-            as much as possible using bash scripting and Terraform.
-          </p>
-        </div>
-      </div>
-      <div class="activity-container" id="carbo-cooker-container">
-        <img alt="carbs king icon" src="https://cdn-icons-png.flaticon.com/512/3270/3270917.png">
-        <div class="activity-description">
-          <h3>Carbs King</h3>
-          <p>
-            I have a great love for cooking, particularly when making fresh pasta and pizza.
-            I enjoy experimenting with different techniques and methods for creating unique and flavorful pasta dishes,
-            from coloured pasta to stuffed varieties.
-            There's something satisfying about crafting a delicious meal from scratch, and I take great pride in what I
-            create.
-          </p>
-        </div>
-      </div>
-    </div> -->
-
-    
+    <curriculum-component></curriculum-component>    
   </main>
 
   <footer-component></footer-component>
-
-  <script src="./components/header/header.js"></script>
+  <script type="module" src="./router/router.js"></script>
+  <script type="module" src="./components/header/header.js"></script>
   <script src="./components/summary/summary.js"></script>
   <script src="./components/skills/skills.js"></script>
   <script src="./components/curriculum/curriculum.js"></script>
