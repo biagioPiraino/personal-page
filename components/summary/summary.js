@@ -9,7 +9,7 @@ class SummaryComponent extends HTMLElement {
             .then(html => {
                 const parser = new DOMParser()
                 const doc = parser.parseFromString(html, "text/html")
-                const template = doc.getElementById("header-template")
+                const template = doc.getElementById("summary-template")
                 const shadow = this.attachShadow({ mode: "open" })
                 shadow.appendChild(template.content.cloneNode(true));
             })

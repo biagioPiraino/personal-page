@@ -21,7 +21,6 @@ class CurriculumComponent extends HTMLElement {
                         const parser = new DOMParser()
                         const doc = parser.parseFromString(html, "text/html")
                         const template = doc.getElementById("curriculum-template")
-                        
                         const content = template.content.getElementById("curriculum-content")
 
                         for(let i = 0; i < this.experiences.length; i++) {

@@ -1,0 +1,54 @@
+<template id="skills-template">
+    <style>
+        #skills-container {
+            margin-top: 15px;
+            margin-bottom: 15px;
+            border: 1px red solid;
+
+            p {
+                padding: 0;
+                margin: 0;
+                margin-top: 10px;
+                font-size: var(--p-font-size)
+            }
+        }
+
+        #skills-header {
+            color: var(--primary-color);
+            font-size: 20px;
+        }
+
+        #skills-content {
+            line-height: 1.5;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            font-size: var(--p-font-size);
+        }
+
+        .skill-entry-container {
+            display: flex;
+
+            .entry-domain {
+                min-width: 100px;
+                text-align: end;
+                margin-right: 15px;
+            }
+        }
+
+        strong {
+            font-weight: 600;
+            color: var(--primary-color)
+        }
+    </style>
+    <div id="skills-container">
+        <div id="skills-header">
+            Skills
+        </div>
+        <div id="skills-content">
+        </div>
+    </div>
+</template>
+
+<template id="skill-entry-template">
+    <slot></slot>
+</template>

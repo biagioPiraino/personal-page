@@ -1,0 +1,45 @@
+{
+  "data":[
+    {
+      "domain": "Programming",
+      "skills": [
+        ".NET Core",
+        "TypeScript",
+        "JavaScript",
+        "Vue.js",
+        "Blazor",
+        "Go",
+        "Bash",
+        "Python",
+        "MVC"
+      ]
+    },
+    {
+      "domain": "Databases",
+      "skills": [
+        "MongoDB",
+        "Microsoft SQL Server",
+        "PostgreSQL",
+        "SQL Lite"
+      ]
+    },
+    {
+      "domain": "DevOps",
+      "skills": [
+        "Git",
+        "Terraform",
+        "JIRA",
+        "Jenkins",
+        "Selenium"
+      ]
+    },
+    {
+      "domain": "Cloud",
+      "skills": [
+        "Azure",
+        "Azure CLI",
+        "AWS (certified SAA-C03)"
+      ]
+    }
+  ]
+}
