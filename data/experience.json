@@ -13,6 +13,9 @@
           "point": "Developed a secure REST API solution to facilitate seamless data exchange and streamline communication processes for B2B partners."
         },
         {
+          "point": "Prototyped an internal macOS app using Swift UI."
+        },
+        {
           "point": "Assisted in maintaining the legacy MVC + Entity Framework stack, ensuring ongoing functionality and alignment with evolving business requirements."
         }
       ]
