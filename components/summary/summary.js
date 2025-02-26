@@ -2,7 +2,7 @@ class SummaryComponent extends HTMLElement {
     constructor() {
         super()
         
-        fetch("/components/summary/summary.html")
+        fetch("components/summary/summary.html")
             .then(response => {
                 return response.text()
             })

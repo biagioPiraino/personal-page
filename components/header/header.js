@@ -4,7 +4,7 @@ class HeaderComponent extends HTMLElement {
     constructor() {
         super()
         
-        fetch("/components/header/header.html")
+        fetch("components/header/header.html")
             .then(response => {
                 return response.text()
             })

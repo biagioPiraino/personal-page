@@ -11,7 +11,7 @@ class CertificationsComponent extends HTMLElement {
             .then(certifications => {
                 this.certifications = certifications.data
 
-                fetch("/components/certifications/certifications.html")
+                fetch("components/certifications/certifications.html")
                     .then(response => {
                         return response.text()
                     })

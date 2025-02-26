@@ -11,7 +11,7 @@ class SkillsComponent extends HTMLElement {
             .then(skills => {
                 this.skills = skills.data
 
-                fetch("/components/skills/skills.html")
+                fetch("components/skills/skills.html")
                     .then(response => {
                         return response.text()
                     })
