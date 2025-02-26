@@ -23,11 +23,20 @@
             gap: 8px;
             justify-content: center;
         }
+
+        .nav-pointer {
+            transition: transform .3s ease-out;
+        }
+
+        .nav-pointer:hover {
+            cursor: pointer;
+            transform: translate(0, -2px)
+        }
     </style>
     <footer>
         <div class="external-links">
-            <a href="https://github.com/biagioPiraino/" target="_blank" referrerpolicy="no-referrer">GitHub</a>
-            <a href="https://www.linkedin.com/in/biagio-piraino/" target="_blank"
+            <a class="nav-pointer" href="https://github.com/biagioPiraino/" target="_blank" referrerpolicy="no-referrer">GitHub</a>
+            <a class="nav-pointer" href="https://www.linkedin.com/in/biagio-piraino/" target="_blank"
                 referrerpolicy="no-referrer">LinkedIn</a>
         </div>
 </template>

@@ -22,22 +22,31 @@
             text-decoration: none;
             color: whitesmoke;
         }
+        
+        .nav-pointer {
+            transition: transform .3s ease-out;
+        }
+
+        .nav-pointer:hover {
+            cursor: pointer;
+            transform: translate(0, -2px)
+        }
     </style>
     <header>
         <div class="inner-container">
             <h2>Biagio Piraino</h2>
             <ul>
                 <li>
-                    <div id="curriculum-nav">Curriculum</div>
+                    <div class="nav-pointer" id="curriculum-nav">Curriculum</div>
                 </li>
                 <li>
-                    <div id="education-nav">Education</div>
+                    <div class="nav-pointer" id="education-nav">Education</div>
                 </li>
                 <li>
-                    <div id="projects-nav">Projects</div>
+                    <div class="nav-pointer" id="projects-nav">Projects</div>
                 </li>
                 <li>
-                    <div id="contacts-nav">Contacts</div>
+                    <div class="nav-pointer" id="contacts-nav">Contacts</div>
                 </li>
             </ul>
         </div>
