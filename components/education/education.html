@@ -1,0 +1,51 @@
+<template id="education-template">
+    <style>
+        #education-content {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border:1px red solid;
+
+            ul {
+                margin: 10px 0px 25px 0px;
+            }
+
+            li {
+                line-height: 1.5;
+                font-size: var(--p-font-size)
+            }
+        }
+
+         .entry-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 20px;
+            margin-bottom: 5px;
+            color: var(--primary-color);
+
+            .header-period {
+                font-size: var(--p-font-size)
+            }
+        }
+
+        .position-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: slategray;
+
+            .position-location {
+                font-size: var(--p-font-size)
+            }
+        }
+    </style>
+    <div id="education-content">
+
+    </div>
+</template>
+
+<template id="education-entry-template">
+    <slot name="header"></slot>
+    <slot name="position"></slot>
+    <slot name="summary"></slot>
+</template>

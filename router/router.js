@@ -11,7 +11,10 @@ export function routeTo(destination) {
             <curriculum-component></curriculum-component>`
             return
         case 'education':
-            main.innerHTML = `<div>education</div>`
+            main.innerHTML = `
+                <education-component></education-component>
+                <hr>
+                `
             return
         case 'projects':
             main.innerHTML = `<div>projects</div>`
