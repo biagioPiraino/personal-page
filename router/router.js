@@ -8,13 +8,15 @@ export function routeTo(destination) {
             <hr>
             <skills-component></skills-component>
             <hr>
-            <curriculum-component></curriculum-component>`
+            <curriculum-component></curriculum-component>
+            <hr>`
             return
         case 'education':
             main.innerHTML = `
                 <education-component></education-component>
                 <hr>
                 <certifications-component></certifications-component>
+                <hr>
                 `
             return
         case 'projects':
