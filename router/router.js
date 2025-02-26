@@ -19,11 +19,5 @@ export function routeTo(destination) {
                 <hr>
                 `
             return
-        case 'projects':
-            main.innerHTML = `<div>projects</div>`
-            return
-        case 'contacts':
-            main.innerHTML = `<div>contacts</div>`
-            return
     }
 }
