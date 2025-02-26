@@ -1,23 +1,16 @@
-# Personal Page
-<h3>Description</h3>
+# Ciao!
 <p>
-Personal page developed using <em>HTML</em>, <em>CSS</em> and vanilla <em>JS</em>.
+This is a small space of mine. It contains my curriculum, education history, certifications obtained and links to my most recent projects and contact me.
 </p>
 
-<hr>
-<h3>Structure</h3>
 <p>
-The website is structured on one page and it contains four sections:
-<ul>
-<li>An <em>Intro</em> section that will dinamically display an intro message to the visitor</li>
-<li>An <em>Activity</em> section that briefly summarise what I am currently doing</li>
-<li>A <em>Contact Me</em> section that allow a visitor to send me emails to <em>biagio.piraino.uk@gmail.com</em> for queries and potential <strong>collaborations</strong></li>
-<li>A <em>Footer</em> section that contains external links to my <em>GitHub</em> repos, <em>Linkedin</em> profile and a <em>Credit</em> page for icons attribution</li>
-</ul
+It was developed using plain triade jhc and leveraged on web-component for reusability and SOC.
 </p>
 
-<hr>
-<h3>Deployment</h3>
 <p>
-The page is publicly deployed using Github Pages.
+A rough router has been developed to mimic a typical SPA behaviour.
+</p>
+
+<p>
+Quite a fun project! :satisfied:
 </p>
